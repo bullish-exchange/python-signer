@@ -1,4 +1,4 @@
-# py-eosio-signer
+# python-signer
 
 Library used for EOSIO signing mechanisms
 
@@ -22,7 +22,7 @@ To install the library for use by a virtual environment use the below installati
 mkdir -p ~/envs
 python3 -m venv ~/envs/eosio-signer 
 source ~/envs/eosio-signer/bin/activate
-pip install https://github.com/bullish-exchange/py-eosio-signer@main
+pip install https://github.com/bullish-exchange/python-signer@main
 ```
 
 ## Testing
@@ -33,15 +33,15 @@ The tests can be run by using [tox](https://tox.readthedocs.io/en/latest/) or [p
 ```bash
 $ tox
 
-GLOB sdist-make: /git/py-eosio-signer/setup.py
-py39 inst-nodeps: /git/py-eosio-signer/.tox/.tmp/package/1/eosio_signer-develop.zip
+GLOB sdist-make: /git/python-signer/setup.py
+py39 inst-nodeps: /git/python-signer/.tox/.tmp/package/1/eosio_signer-develop.zip
 py39 installed: attrs==21.2.0,base58==2.1.0,ecdsa==0.17.0,eosio-signer===develop,iniconfig==1.1.1,packaging==21.0,pluggy==0.13.1,py==1.10.0,pyparsing==2.4.7,pytest==6.2.4,six==1.16.0,toml==0.10.2
 py39 run-test-pre: PYTHONHASHSEED='2025419556'
 py39 run-test: commands[0] | pytest
 ========================================================= test session starts ==========================================================
 platform darwin -- Python 3.9.6, pytest-6.2.4, py-1.10.0, pluggy-0.13.1
 cachedir: .tox/py39/.pytest_cache
-rootdir: /git/py-eosio-signer
+rootdir: /git/python-signer
 collected 8 items                                                                                                                      
 
 tests/test_eosiokey.py ........                                                                                                  [100%]
@@ -59,7 +59,7 @@ $ pytest
 
 ========================================================= test session starts ==========================================================
 platform darwin -- Python 3.9.6, pytest-6.2.4, py-1.10.0, pluggy-0.13.1
-rootdir: /git/py-eosio-signer
+rootdir: /git/python-signer
 collected 8 items                                                                                                                      
 
 tests/test_eosiokey.py ........                                                                                                  [100%]
